@@ -7,12 +7,42 @@
 
     <title>AboutIDNucleus</title>
 
-    
+<script>
+var URL = 'https://h1s5g1asc0.execute-api.eu-west-1.amazonaws.com/prod/contact'
+ 
+$('#contact-form').submit(function (event) {
+  event.preventDefault()
+ 
+  var data = {
+    name: $('#name').val(),
+    email: $('#email').val(),
+    company: $('#company').val(),
+    query: $('#query').val(),
+    recaptcha: $('#recaptcha').val()
+  }
+ 
+  $.ajax({
+    type: 'POST',
+    url: URL,
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    success: function () {
+      // clear form and show a success message
+      console.log("Success");
+    },
+    error: function () {
+      // show an error message
+        console.log("Fail");
+    }
+  })
+}) 
+</script>    
 
 
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 <script src='https://www.google.com/recaptcha/api.js'></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <!--[if lte IE 8]>
   
@@ -82,7 +112,7 @@ Fill in the form and we will be in touch!
 
 
 
-		    <form class="pure-form pure-form-aligned" action="https://h1s5g1asc0.execute-api.eu-west-1.amazonaws.com/prod" method=POST>
+		    <form class="pure-form pure-form-aligned">
 		    <fieldset>
 		        <div class="pure-control-group">
 		            <label for="name">Your Name</label>
