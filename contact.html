@@ -80,7 +80,9 @@ Fill in the form and we will be in touch!
         <div class="pure-u-1 pure-u-md-1-2">
             <div class="l-box">
 
-		    <form class="pure-form pure-form-aligned">
+
+
+		    <form class="pure-form pure-form-aligned" action="https://h1s5g1asc0.execute-api.eu-west-1.amazonaws.com/prod" method=POST>
 		    <fieldset>
 		        <div class="pure-control-group">
 		            <label for="name">Your Name</label>
@@ -101,11 +103,9 @@ Fill in the form and we will be in touch!
 		            <label for="query">How can we help</label>
 		            <textarea rows="5" id="query"  placeholder="Your question here..." required></textarea>
 		        </div>
-		        
 		        <div class="pure-control-group">		        
 			        <div class="g-recaptcha" data-sitekey="6LcS_wgUAAAAAL4rdvPrR8KqPRZRXVCCuIV-L0CP"></div>
 		        
-		        <div class="pure-control-group">
 		            <button type="submit" class="pure-button pure-button-primary">Contact Us</button>
 		        </div>
 		    </fieldset>
