@@ -6,7 +6,9 @@
 <meta name="description" content="A layout example that shows off a responsive pricing table.">
 
     <title>AboutIDNucleus</title>
-
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 	var URL = 'https://hqy3d6nu5e.execute-api.eu-west-1.amazonaws.com/prod'
@@ -17,8 +19,7 @@ $(document).ready(function(){
 	    name: $('#name').val(),
 	    email: $('#email').val(),
 	    query: $('#query').val(),
-	    company: $('#company').val(),
-	    recaptcha: $('#recaptcha').val()
+	    company: $('#company').val()
 	  }
 	 
 	  $.ajax({
@@ -52,9 +53,7 @@ $(document).ready(function(){
 </script>   
 
 
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
 <!--[if lte IE 8]>
   
@@ -116,7 +115,7 @@ $(document).ready(function(){
                 <p>
 Fill in the form and we will be in touch!
                 </p>
-				
+				<p id="result">See me here</p>
             </div>
         </div>
         
@@ -146,13 +145,13 @@ Fill in the form and we will be in touch!
 		        </div>
 		        <div class="pure-control-group">		        
 			        <div class="g-recaptcha" id="recaptcha" data-sitekey="6LcS_wgUAAAAAL4rdvPrR8KqPRZRXVCCuIV-L0CP"></div>
-		        
+		        		        
 		            <button type="submit" class="pure-button pure-button-primary">Contact Us</button>
 		        </div>
 		    </fieldset>
 			</form>
 
-<p id="result">See me here</p>
+
             </div>
         </div>
 
