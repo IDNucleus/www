@@ -20,7 +20,7 @@ $(document).ready(function(){
 	    email: $('#email').val(),
 	    query: $('#query').val(),
 	    company: $('#company').val(),	    
-	    recaptcha: $('#recaptcha').val()
+	    recaptcha: $('#g-recaptcha-response').val()
 	  }
 	 
 	  $.ajax({
@@ -145,7 +145,7 @@ Fill in the form and we will be in touch!
 		            <textarea rows="5" id="query"  placeholder="Your question here..." required></textarea>
 		        </div>
 		        <div class="pure-control-group">		        
-			        <div class="g-recaptcha" id="recaptcha" data-sitekey="6LcS_wgUAAAAAL4rdvPrR8KqPRZRXVCCuIV-L0CP"></div>
+			        <div class="g-recaptcha" id="g-recaptcha-response" data-sitekey="6LcS_wgUAAAAAL4rdvPrR8KqPRZRXVCCuIV-L0CP"></div>
 		        		        
 		            <button type="submit" class="pure-button pure-button-primary">Contact Us</button>
 		        </div>
