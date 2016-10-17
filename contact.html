@@ -38,10 +38,10 @@ $(document).ready(function(){
     		{
 		  	    // clear form and show a success message
 		    	$("#result").text(results);
-			    $("#name").value("");
-			    $('#email').value("");
-			    $('#query').value("");
-			    $('#company').value("");
+			    $("#name").val("");
+			    $('#email').val("");
+			    $('#query').val("");
+			    $('#company').val("");
     		}
 	    },
 	    error: function (results) {
@@ -116,7 +116,7 @@ $(document).ready(function(){
                 <p>
 Fill in the form and we will be in touch!
                 </p>
-				<p id="result">See me here</p>
+				<p id="result"></p>
             </div>
         </div>
         
