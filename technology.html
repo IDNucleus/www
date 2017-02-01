@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a responsive pricing table.">
+<meta name="description" content="IDNucleus, Identity as a service">
 <meta name="keywords" content="IDaaS, Identity, Service, Cloud, ForgeRock, Single, Sign On, OpenAM, OpenDJ">
 
-    <title>Company</title>
-
+    <title>Welcome to IDNucleus</title>
 
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 <script>
@@ -21,7 +20,6 @@
 
 </script>
 
-
 <!--[if lte IE 8]>
   
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
@@ -32,11 +30,6 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
   
 <!--<![endif]-->
-
-
-
-
-
   
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
@@ -45,11 +38,14 @@
         <link rel="stylesheet" href="css/layouts/pricing.css">
     <!--<![endif]-->
   
+	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+	<script type="text/javascript">
+	    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"cookie.html","theme":"dark-bottom"};
+	</script>
+	
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+	<!-- End Cookie Consent plugin -->
 
-
-    
-
-    
 
 </head>
 <body>
@@ -70,7 +66,7 @@
 
 <div class="banner">
     <h1 class="banner-head">
-        IDNucleus. Identity and Access Management as a service
+        Scalable, repeatable, cloud identity solution<br>
     </h1>
 </div>
 
@@ -79,51 +75,47 @@
     <div class="information pure-g">
         <div class="pure-u-1 pure-u-md-1-2">
             <div class="l-box">
-                <h3 class="information-head">What we do</h3>
+                <h3 class="information-head">Cloud Technology</h3>
                 <p>
-The team at IDNucleus have years of experience in providing identity management solutions to large enterprises. We know
-Identity and Access Management, and can pass that experience on to our customers. We decided to take our knowledge 
-and provide it as a service in the cloud, to enable smaller and larger companies to benefit from our expertise.
+We use the Amazon Cloud to provide scale for our Identity Service, and Ansible to provision the hardware and software. This
+provides scale and a repeatable, reliable way create environments.
+
                 </p>
             </div>
         </div>
 
         <div class="pure-u-1 pure-u-md-1-2">
             <div class="l-box">
-                <h3 class="information-head">What makes us different</h3>
+                <h3 class="information-head">Repeatable Deployment</h3>
                 <p>
-We have taken our expertise in ForgeRock Identity and Access Management products, to provide a secure, reliable and scalable
-solution that works every time. Our secure environment can be created quickly in the cloud and meets the needs of most customers
-without changes. This enables our customers to get from zero to running with a production ready solution in next to no time. 
-We do this by combining our knowledge with automation in the cloud, to give our solutions flexibility and reliability.
+Ansible creates a secure network environment, virtual servers and deploys the software to build a working forgerock identity
+environment. This allows us to upgrade with minimal downtime and ensure that all our environments are the same.
                 </p>
             </div>
         </div>
 
         <div class="pure-u-1 pure-u-md-1-2">
             <div class="l-box">
-                <h3 class="information-head">How can we help</h3>
+                <h3 class="information-head">Secure Key Management</h3>
+                <p>
+Keys and passwords are created by the deployment process and locked in an encrypted data store that is only accessible
+by the ForgeRock servers. This approach minimises the risks of secure key data being accessed by unauthorised users and locks down
+access onlyo to a small set of administrators.
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">Manageable</h3>
                 <p> 
-We can provide your Identity and access management platform as a managed service in the cloud. If you have bought 
-the ForgeRock identity management products and are looking to implement a solution, we can get you up
-and running very quickly. If you are looking for an Identity as a Service provider, then we provide a cost effective, 
-fully featured platform. As well as a stand alone Software as a Service, our expertise can help you set up and manage 
-your solution in your own cloud or on-premise infrastructure.
+The environments are managed using centralised logging, operational intelligence and alerting. We can provide office hours, or 
+24x7 support.
                 </p>
             </div>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-2">
-            <div class="l-box">
-                <h3 class="information-head">How do we get started?</h3>
-                <p>
-IDNucleus is currently in Beta testing and we are looking for customers who need help getting their Identity Management platform
-up and running. If you've bought the ForgeRock licenses and want to make use of them now, then contact us and we can get you started 
-straight way.
-                </p>
-            </div>
-        </div>
-    </div> <!-- end information -->
+ 
 </div> <!-- end l-content -->
 
 <div class="footer l-box">
@@ -131,7 +123,6 @@ straight way.
         <a href="contact.html">Contact us</a> for a free trial and we will create your own ForgeRock Identity Management platform to try out
     </p>
 </div>
-
 
 
 
